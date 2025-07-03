@@ -45,8 +45,8 @@ A smart **multi-tool AI research assistant** that reads PDFs, searches the web, 
 
 ```bash
 # 1. Clone this repo
-git clone https://github.com/your-username/assistant-research-agent.git
-cd assistant-research-agent
+git clone https://github.com/Rakshath66/Assistant-Research-Agent-LangChain.git
+cd Assistant-Research-Agent-LangChain
 
 # 2. Create virtual environment (optional but recommended)
 python -m venv venv
@@ -68,7 +68,7 @@ streamlit run src/streamlit_app.py
 ## 🗂️ Project Structure
 
 ```
-assistant-research-agent/
+Assistant-Research-Agent-LangChain/
 ├── src/
 │   ├── streamlit_app.py     # Main UI and agent setup
 │   └── agent_tools.py       # Custom LangChain tools
@@ -114,7 +114,7 @@ We welcome contributions! Here's how you can help:
 
 1. Fork this repository
 2. Clone your fork:
-   `git clone https://github.com/rakshath66/assistant-research-agent.git`
+   `git clone https://github.com/Rakshath66/Assistant-Research-Agent-LangChain.git`
 3. Create a new branch:
    `git checkout -b feature/my-feature`
 4. Make your changes, commit, and push:
