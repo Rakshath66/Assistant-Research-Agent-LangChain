@@ -1,24 +1,7 @@
----
-title: Rag Agent Ui
-emoji: 🚀
-colorFrom: red
-colorTo: red
-sdk: docker
-app_port: 8501
-tags:
-- streamlit
-pinned: false
-short_description: Google-style web search, ask questions, Memory-aware convo
-license: mit
----
-Here's a polished, professional, and **open-source–friendly GitHub `README.md`** that includes everything from project intro to contribution steps and MIT license, tailored to attract contributors:
-
----
-
 ````markdown
 # 🔎 Assistant Research Agent — LangChain + Mistral + Streamlit
 
-A smart **multi-tool AI research assistant** that reads PDFs, searches the web, queries Wikipedia, solves math, and explains every step it takes — all using LangChain Agents and Mistral-7B via OpenRouter.
+A smart **multi-tool AI research assistant** that reads PDFs, searches the web, queries Wikipedia, solves math, and explains every step it takes — all using LangChain Agents and Mistral-7B via OpenAI.
 
 > ✅ Built with: `LangChain`, `Streamlit`, `Mistral-7B`, `Tavily`, `PyMuPDF`, `Wikipedia`, `PythonREPL`
 
@@ -36,14 +19,15 @@ A smart **multi-tool AI research assistant** that reads PDFs, searches the web, 
 
 ## 🧠 Features
 
-- 📄 **Summarize PDFs** using PyMuPDF and an LLM
-- 🌐 **Web search** powered by [Tavily](https://tavily.com/)
-- 📚 **Wikipedia facts** summarizer
-- 🧮 **Python-based calculator** (LangChain’s REPL tool)
-- 🔁 **Reverse tool** (custom)
-- 💬 **Memory support** for multi-turn conversations
-- 🔍 **Reasoning trace** (Thought → Action → Result)
-- 🎨 Sleek UI with gradient title and tool checklist
+- 📄 Summarize **PDFs**
+- 🌐 Search the **Web** using Tavily
+- 📚 Get facts from **Wikipedia**
+- 🧮 Solve **math** with Python REPL
+- 🔁 Custom **reverse tool**
+- 💬 Multi-turn **memory**
+- 🪄 Shows **Chain-of-Thought** (Thought → Action → Result)
+- ✅ Tool usage checklist
+- 🎨 Clean Streamlit UI
 
 ---
 
@@ -73,7 +57,7 @@ source venv/bin/activate  # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
 
 # 4. Add your API keys in .env
-echo "OPENROUTER_API_KEY=your_openrouter_key" >> .env
+echo "OPENAI_API_KEY=your_openai_key" >> .env
 echo "TAVILY_API_KEY=your_tavily_key" >> .env
 
 # 5. Launch the app
@@ -86,9 +70,6 @@ streamlit run src/streamlit_app.py
 
 ```
 assistant-research-agent/
-│
-├── .streamlit/              # Streamlit config
-│   └── config.toml
 ├── src/
 │   ├── streamlit_app.py     # Main UI and agent setup
 │   └── agent_tools.py       # Custom LangChain tools
@@ -104,20 +85,20 @@ assistant-research-agent/
 Create a `.env` file (or set in Streamlit Secrets):
 
 ```
-OPENROUTER_API_KEY=your_openrouter_key
+OPENAI_API_KEY=your_openai_key
 TAVILY_API_KEY=your_tavily_key
 ```
 
 If you're using **Streamlit Cloud**, paste this into **Settings → Secrets**:
 
 ```toml
-OPENROUTER_API_KEY = "sk-..."
+OPENAI_API_KEY = "sk-..."
 TAVILY_API_KEY = "tvly-..."
 ```
 
 ---
 
-## 🧪 Sample Questions
+## 🧪 Try Questions Like
 
 * “What projects did Rakshath work on in the uploaded PDF?”
 * “Summarize Wikipedia on LangChain.”
@@ -130,45 +111,25 @@ TAVILY_API_KEY = "tvly-..."
 
 We welcome contributions! Here's how you can help:
 
-### ✅ To Contribute:
+### ✅ Steps To Contribute:
 
 1. Fork this repository
 2. Clone your fork:
-   `git clone https://github.com/your-username/assistant-research-agent.git`
+   `git clone https://github.com/rakshath66/assistant-research-agent.git`
 3. Create a new branch:
    `git checkout -b feature/my-feature`
-4. Make your changes and commit:
-   `git commit -m "Add: your message here"`
-5. Push to your branch:
+4. Make your changes, commit, and push:
+   `git commit -m "Add: my feature"`
    `git push origin feature/my-feature`
-6. Open a Pull Request with a description of your changes
+5. Open a Pull Request with a description of your changes
 
-> 📢 Please write clean, readable code and include docstrings if adding tools or modifying behavior.
-
----
-
-## 📦 Deployment Options
-
-### Option 1: Run Locally (Best for Development)
-
-```
-streamlit run src/streamlit_app.py
-```
-
-### Option 2: [Deploy to Streamlit Cloud](https://streamlit.io/cloud)
-
-1. Fork this repo
-2. Go to [Streamlit Cloud](https://streamlit.io/cloud)
-3. Click **New app → From GitHub**
-4. Add your repo and branch
-5. Under **Advanced Settings → Secrets**, paste your API keys
-6. Done!
+> 🔍 Please write clean readable code, add docstrings if needed, and test your features!
 
 ---
 
 ## 📃 License
 
-MIT License © [Your Name](https://github.com/your-username)
+MIT License © [Rakshath U Shetty](https://github.com/rakshath66)
 
 ```text
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -184,95 +145,112 @@ Also, feel free to open issues, request features, or contribute.
 
 ---
 
-### 🧑‍💻 Built by [Your Name](https://github.com/your-username)
+### 🧑‍💻 Built by [Rakshath U Shetty](https://github.com/rakshath66)
 
-* Inspired by modern AI research assistants
-* Designed for clarity, transparency, and tool-powered reasoning
-* Open-sourced to help others learn LangChain agents
-
----
-
-```
-
-> Replace:
-- `your-username` with your GitHub username
-- Add actual screenshot in `demo/screenshot.png` or remove that line
-- Fill your real name or link
-
-Would you like me to generate a matching `LICENSE` file (MIT)?
-```
-
-
-
-Next What?
-Here's our **full roadmap after a working RAG Agent** plan
+* Open source forever
+* Designed for learning, research, and practical use
+* Reach out via issues or PRs — ideas welcome!
 
 ---
 
-### ✅ PHASE 1: ✅ DONE
+What Next?
+This project is just the beginning. We’re building a **production-ready RAG Agent** that evolves over time. Here's the full roadmap after completing the basic agent.
 
-**You’ve completed:**
+## 📅 Roadmap
 
-* ✅ Tool-based reasoning agent (PDF, Web, Wikipedia, Calculator)
-* ✅ Streamlit UI with memory, CoT trace, and tool usage breakdown
+---
+
+### ✅ Phase 1: Tool-Based RAG Agent — ✅ Done
+
+* 🧠 Chain-of-Thought Agent using LangChain
+* 🔧 Tools: PDF summarization, Web search (Tavily), Wikipedia, Calculator
+* 🧮 Built-in Memory
+* 💡 Reasoning trace (Thought → Action → Result)
+* 🎨 Streamlit UI with tool checklist
 
 ---
 
 ### 🚀 PHASE 2: Chain-of-Tools Agent
 
-Make your agent **auto-chain** actions like:
+Let the agent auto-chain steps like:
 
-> “Summarize top 3 news articles about XYZ”
-> ⟶ Search → Pick top links → Read + Summarize → Combine
+> “Summarize top 3 news articles about XYZ”  
+> ⟶ Search → Pick top links → Read + Summarize → Combine insights
 
-#### 🔧 Add next tools:
+#### 🔧 New Tools to Add:
 
-* `summarize_url` (for reading links)
-* `multi_url_summary` (loops through list of URLs)
-* `web_search_chain` (Tavily + summarize\_url combined)
+- `summarize_url` — Read and summarize a web page
+- `multi_url_summary` — Loop over list of URLs and extract key info
+- `web_search_chain` — Combined search + read + summarize
 
 ---
 
 ### 🧠 PHASE 3: Agent with Function Memory
 
-Let your agent **remember key facts per user**, like:
+Let the agent **remember facts** about the user or previous answers.
 
-> “Who is the CEO of Tesla?”
-> → Even next day, it remembers your earlier query.
+Example:
 
-Use:
+> “Who is the CEO of Tesla?”  
+> → Even tomorrow, it remembers your earlier query.
 
-* LangChain’s `VectorStoreRetrieverMemory`
-* Store extracted facts like Q/A or timeline
+🧰 Tools & Techniques:
+
+- LangChain’s `VectorStoreRetrieverMemory`
+- Store structured Q&A facts or timelines
+- Indexed long-term memory support
 
 ---
 
-### 📁 PHASE 4: Document Q\&A + Chunk Tracking
+### 📁 PHASE 4: Document Q&A + Chunk Tracking
 
-Improve document tool:
+Enhance document summarization:
 
-* Show which **chunks** were used to generate the answer
-* Highlight matching parts in the PDF
-* Support **multiple PDFs at once** intelligently
+- 🔍 Show exactly which **chunks** from the PDF were used in the answer
+- 📄 Highlight matching text in context
+- 🗂️ Support multi-PDF ingestion with separate memory per doc
 
 ---
 
 ### 🤖 PHASE 5: Tool-Using Assistant API
 
-Package your whole logic into:
+Turn this logic into a **production API backend**:
 
-* `fastapi` or `litestar` backend
-* Add endpoint: `/ask` → returns final answer + reasoning trace
-* Ideal for chatbot or research assistant SaaS
+- 🔌 Framework: `FastAPI` or `Litestar`
+- 🧠 Endpoint: `/ask` → returns final answer + trace
+- 💬 Useful for building your own chatbot or research SaaS
 
 ---
 
 ### 🌐 PHASE 6: Assistant with Browsing + Plugin Tools
 
-Use LangGraph (for branching logic) or LangChain Expression Language (LCEL):
+Make the agent smarter at real-world decisions:
 
-* Agent decides: Search? Read? Combine? Skip?
-* Add tools like `YouTubeTranscriptTool`, `Google Scholar Reader`, etc.
+- 🌐 Use LangGraph or LCEL to handle branching logic
+- 🤖 Tools like:
+  - `YouTubeTranscriptTool`
+  - `Google Scholar Reader`
+  - `News Aggregator`
+- 🧠 Agent decides:
+  - Should I search?
+  - Should I summarize?
+  - Can I skip?
 
 ---
+
+> ⭐ Want to contribute to any phase? Fork the repo, build a feature, and submit a PR! The roadmap is open for collaboration.
+
+---
+
+```
+
+Let me know if you want:
+- `LICENSE` file (MIT version)
+- A matching `.env.example` file
+- `demo/screenshot.png` placeholder
+- `contributing.md` file
+
+All of this helps boost your open-source visibility!
+```
+
 
