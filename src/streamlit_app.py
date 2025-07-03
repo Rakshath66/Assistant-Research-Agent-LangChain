@@ -10,16 +10,16 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv(dotenv_path=".env")
-api_key = os.getenv("OPENAI_API_KEY")
+api_key = os.getenv("OPENROUTER_API_KEY")
 
 # ✅ Set required env var
 os.environ["OPENAI_API_KEY"] = api_key
-# api_key = os.environ.get("OPENAI_API_KEY") DEPLOYMENT
+# api_key = os.environ.get("OPENROUTER_API_KEY") DEPLOYMENT
 
 # ✅ Set up LLM
 headers = {
     "Authorization": f"Bearer {api_key}",             # ✅ Mandatory
-    "HTTP-Referer": "https://github.com/Rakshath66",  # ✅ Required by OpenAI
+    "HTTP-Referer": "https://github.com/Rakshath66",  # ✅ Required by OpenRouter
     "X-Title": "LangChain Agent"                      # ✅ Optional, branding
 }
 llm = ChatOpenAI(   
