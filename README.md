@@ -1,4 +1,3 @@
-````markdown
 # 🔎 Assistant Research Agent — LangChain + Mistral + Streamlit
 
 A smart **multi-tool AI research assistant** that reads PDFs, searches the web, queries Wikipedia, solves math, and explains every step it takes — all using LangChain Agents and Mistral-7B via OpenAI.
