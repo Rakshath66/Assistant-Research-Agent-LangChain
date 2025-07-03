@@ -155,7 +155,12 @@ if submit and query:
 
         # ✅ Show full reasoning like Thoughts → Actions → Results
     if "intermediate_steps" in response:
-        st.markdown("### 🧠 See How Researcher is Thinking? - Reasoning Trace")
+        st.markdown("""
+        <div style='margin-top: 30px; margin-bottom: 15px; padding: 10px; background-color: #111; border-left: 5px solid #1ca9e0;'>
+            <h3 style='color: #1ca9e0; margin: 0;'>🧠 See How Researcher is Thinking</h3>
+            <p style='color: #ccc; margin: 5px 0 0;'>Full reasoning trace — Thoughts → Actions → Results</p>
+        </div>
+        """, unsafe_allow_html=True)
 
         used_tools_set = set()
 
@@ -197,7 +202,7 @@ if submit and query:
 
         # ✅ Show unique tools used
         if used_tools_set:
-            st.markdown("#### 🛠️ Tools Used:")
+            # st.markdown("#### 🛠️ Tools Used:")
             all_tool_names = {
                 "summarize_pdf": "📄 Summarize PDF",
                 "tavily_search_results_json": "🌐 Web Search",
@@ -209,7 +214,7 @@ if submit and query:
             
             #orange
             tool_list_html = "<div style='background-color: #111; padding: 15px; border-radius: 10px;'>"
-            tool_list_html += "<h4 style='color: #1ca9e0;'>&nbsp;&nbsp;📝 Checklist</h4><ul style='list-style: none; padding-left: 0;'>"
+            tool_list_html += "<h3 style='color: #1ca9e0; margin-bottom: 1rem;'>🛠️ Tools Used Checklist:</h3><ul style='list-style: none; padding-left: 0;'>"
 
             for tool, label in all_tool_names.items():
                 tool_key = tool.lower()

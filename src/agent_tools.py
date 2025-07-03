@@ -12,6 +12,8 @@ from langchain.chat_models import ChatOpenAI
 from langchain_core.runnables import RunnableLambda
 import ast
 
+# load_dotenv(dotenv_path=".env")
+
 # ✅ 1. Reverse Tool
 @tool
 def reverse_tool(input_str: str) -> str:
