@@ -4,15 +4,15 @@ A smart **multi-tool AI research assistant** that reads PDFs, searches the web, 
 
 > ✅ Built with: `LangChain`, `Streamlit`, `Mistral-7B`, `Tavily`, `PyMuPDF`, `Wikipedia`, `PythonREPL`
 
-![GitHub Repo stars](https://img.shields.io/github/stars/rakshath66/assistant-research-agent?style=social)
-![GitHub forks](https://img.shields.io/github/forks/rakshath66/assistant-research-agent?style=social)
-![MIT License](https://img.shields.io/github/license/rakshath66/assistant-research-agent)
+![GitHub Repo stars](https://img.shields.io/github/stars/Rakshath66/Assistant-Research-Agent-LangChain?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Rakshath66/Assistant-Research-Agent-LangChain?style=social)
+![MIT License](https://img.shields.io/github/license/Rakshath66/Assistant-Research-Agent-LangChain)
 
 ---
 
 ## 📸 Preview
 
-![screenshot](demo/screenshot.png) <!-- Add your screenshot here -->
+![image](images/lang.png) 
 
 ---
 
@@ -36,7 +36,7 @@ A smart **multi-tool AI research assistant** that reads PDFs, searches the web, 
 
 - Python 3.9+
 - API Keys from:
-  - [OpenRouter](https://openrouter.ai)
+  - [OpenAI](https://platform.openai.com/api-keys)
   - [Tavily](https://app.tavily.com)
 
 ---
