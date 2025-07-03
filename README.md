@@ -12,7 +12,7 @@ A smart **multi-tool AI research assistant** that reads PDFs, searches the web, 
 
 ## 📸 Preview
 
-![image](images/lang.png) 
+![image](images/ui.png) 
 
 ---
 
